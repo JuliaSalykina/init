@@ -1,0 +1,9 @@
+#!/bin/bash
+du -sh ~/
+echo "Clean memory??"
+read clean
+if [ $clean = yes ]
+then
+	rm -rf ~/Library/*42_cache*
+	du -sh ~/
+fi

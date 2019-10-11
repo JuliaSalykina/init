@@ -1,0 +1,3 @@
+# Identify broadcast address
+
+ifconfig | grep broadcast | awk '{print $6}'
